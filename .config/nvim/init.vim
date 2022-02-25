@@ -1,3 +1,7 @@
+" Key Mappings
+"
+map <n><t>:NERDTreeToggle<CR>
+
 " Enable line numbers
 set number
 
@@ -33,6 +37,9 @@ else
 endif
 let g:deoplete#enable_at_startup = 1
 
+" Nice status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 
 
