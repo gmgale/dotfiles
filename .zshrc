@@ -34,6 +34,7 @@ alias ....="cd ../../.."
 alias desktop="cd ~/Desktop"
 alias cdpy="/Users/george/Documents/George/Home_Code/Python"
 alias we="curl http://wttr.in/"
+alias cdwork="cd /Users/george/work"
 
 # Projects
 alias cdbon="cd ~/work/com.sixt.classic.rental-processing.reward"
