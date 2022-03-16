@@ -1,7 +1,7 @@
 export PS1="🚀 "
 
 # Configs
-alias zshconfig="nvim ~/.zshrc"
+alias zshrc="nvim ~/.zshrc"
 alias zshenv="nvim ~/.zshenv"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
 
@@ -40,6 +40,7 @@ alias cdwork="cd /Users/george/work"
 alias cdbon="cd ~/work/com.sixt.classic.rental-processing.reward"
 alias cdvou="cd ~/work/com.sixt.classic.rental-processing.voucher"
 alias cdjob="cd ~/work/com.sixt.classic.core.jobsystem/bin/jobsystem"
+alias cdbillingoffice="cd ~/work/com.sixt.classic.rental-processing.rac-billing-office"
 
 # functions
 
