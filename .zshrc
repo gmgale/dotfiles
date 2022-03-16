@@ -25,6 +25,7 @@ export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 export TNS_ADMIN="/Users/george/Documents/TNS_ADMIN"
 export PATH="/opt/WebDriver/bin:$PATH"
+export PATH="/Users/george/bin/Sencha/Cmd:$PATH"
 
 alias ll="ls -la"
 alias ..="cd .."
