@@ -53,3 +53,18 @@ listening() {
         echo "Usage: listening [pattern]"
     fi
 }
+## GeekTool Timer
+# `gtt Pick up the kids 1:30` sets a timer for 1 hour and 30 minutes
+# `gtt Feed the fish 10` will set a timer for 10 minutes
+# Running `gtt` with no arguments will clear the running timer and exit
+gtt() {
+	# if a timer is running, kill it
+	pid=$(ps ax | grep -E "osascript .*/geektooltimer" | grep -v grep | awk '{print $1}')
+	[[ $pid ]] && kill $pid
+	# Clear any existing text
+	/usr/bin/osascript -e 'tell application "GeekTool Helper" to set command of shell geeklet named "GeekTimer" to "echo"'
+	# if there are arguments, run the script with them. 
+	if [[ $# -gt 0 ]]; then
+		/usr/bin/osascript /Users/george/scripts/geektooltimer "$*" 2>&1 &
+	fi
+}
